@@ -1,138 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toronto Durgabari Donations</title>
-  <meta name="description" content="Donate to Toronto Durgabari via Interac e-Transfer" />
   <style>
-    :root{
-      --bg:#f7f7fb;
-      --card:#ffffff;
-      --text:#1f2937;
-      --muted:#4b5563;
-      --accent:#0ea5e9;
-      --radius:18px;
-      --shadow:0 10px 30px rgba(0,0,0,.08);
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f9f9f9;
+      padding: 40px;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.5;
+    h1 {
+      color: #333;
     }
-    .wrap{
-      max-width:720px;
-      margin:40px auto;
-      padding:24px;
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
     }
-    .card{
-      background:var(--card);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:28px;
+    .button {
+      display: block;
+      width: 250px;
+      margin: 15px auto;
+      padding: 15px;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      color: white;
     }
-    h1{
-      margin:0 0 8px 0;
-      font-size: clamp(24px, 3vw, 34px);
-      letter-spacing:.2px;
+    .td { background: #006643; }
+    .rbc { background: #003087; }
+    .scotia { background: #d81e05; }
+    .bmo { background: #1a4e8a; }
+    .cibc { background: #b71234; }
+    .nbc { background: #e41b13; }
+    .desjardins { background: #007a33; }
+    .tangerine { background: #f58025; }
+    .simplii { background: #000000; }
+    .eq { background: #ffcc00; color: #000; }
+    .vancity { background: #e41b13; }
+    .meridian { background: #003865; }
+    .email-box {
+      margin-top: 30px;
+      padding: 10px;
+      border: 2px dashed #666;
+      display: inline-block;
+      font-size: 18px;
+      background: #fff;
     }
-    p.lead{color:var(--muted); margin-top:0; margin-bottom:18px;}
-    .email-box{
-      display:flex;
-      gap:8px;
-      align-items:center;
-      background:#f1f5f9;
-      border:1px dashed #cbd5e1;
-      border-radius:12px;
-      padding:12px 14px;
-      font-size:18px;
-      justify-content:space-between;
-      flex-wrap:wrap;
-    }
-    .email-text{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
-    button.copy{
-      border:0;
-      background:var(--accent);
-      color:white;
-      border-radius:10px;
-      padding:10px 14px;
-      cursor:pointer;
-      font-weight:600;
-    }
-    .banks{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-      gap:12px;
-      margin-top:16px;
-    }
-    a.btn{
-      display:block;
-      text-decoration:none;
-      text-align:center;
-      padding:14px 16px;
-      border-radius:12px;
-      color:white;
-      font-weight:700;
-      box-shadow:var(--shadow);
-    }
-    .td{ background:#006643; }
-    .rbc{ background:#003087; }
-    .scotia{ background:#d81e05; }
-    .note{
-      margin-top:16px;
-      color:var(--muted);
-      font-size:14px;
-    }
-    footer{ text-align:center; margin-top:24px; color:#94a3b8; font-size:12px; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <h1>Toronto Durgabari — Donations</h1>
-      <p class="lead">To donate via Interac e‑Transfer, send to the email below.</p>
+  <h1>Toronto Durgabari Donations</h1>
+  <p>To donate via Interac e-Transfer, please send to:</p>
+  <div class="email-box">torontodurgabari2009@gmail.com</div>
+  <p>Select your bank below to open your app:</p>
+  
+  <a class="button td" href="https://www.td.com/ca/en/personal-banking/products/ways-to-bank/online-and-mobile-banking" target="_blank">Open TD</a>
+  <a class="button rbc" href="https://www.rbcroyalbank.com/ways-to-bank/online-banking/index.html" target="_blank">Open RBC</a>
+  <a class="button scotia" href="https://www.scotiabank.com/ca/en/personal/ways-to-bank/scotia-online.html" target="_blank">Open Scotiabank</a>
+  <a class="button bmo" href="https://www.bmo.com/main/personal/online-banking" target="_blank">Open BMO</a>
+  <a class="button cibc" href="https://www.cibc.com/en/personal-banking/ways-to-bank/online-banking.html" target="_blank">Open CIBC</a>
+  <a class="button nbc" href="https://www.nbc.ca/personal/online-banking.html" target="_blank">Open National Bank</a>
+  <a class="button desjardins" href="https://www.desjardins.com/ca/personal/online-services/index.jsp" target="_blank">Open Desjardins</a>
+  <a class="button tangerine" href="https://www.tangerine.ca/en" target="_blank">Open Tangerine</a>
+  <a class="button simplii" href="https://www.simplii.com/en/personal-banking/ways-to-bank/online-banking.html" target="_blank">Open Simplii</a>
+  <a class="button eq" href="https://www.eqbank.ca/" target="_blank">Open EQ Bank</a>
+  <a class="button vancity" href="https://www.vancity.com/Banking/OnlineBanking" target="_blank">Open Vancity</a>
+  <a class="button meridian" href="https://www.meridiancu.ca/Personal/Banking/Ways-to-Bank/Online-Banking" target="_blank">Open Meridian</a>
 
-      <div class="email-box">
-        <span class="email-text" id="email">torontodurgabari2009@gmail.com</span>
-        <button class="copy" id="copyBtn" aria-label="Copy email">Copy email</button>
-      </div>
-
-      <p class="lead" style="margin-top:18px;">Open your bank below (mobile or web):</p>
-
-      <div class="banks">
-        <a class="btn td" href="https://www.td.com/ca/en/personal-banking/products/ways-to-bank/online-and-mobile-banking" target="_blank" rel="noopener">Open TD</a>
-        <a class="btn rbc" href="https://www.rbcroyalbank.com/ways-to-bank/online-banking/index.html" target="_blank" rel="noopener">Open RBC</a>
-        <a class="btn scotia" href="https://www.scotiabank.com/ca/en/personal/ways-to-bank/scotia-online.html" target="_blank" rel="noopener">Open Scotiabank</a>
-      </div>
-
-      <p class="note">After opening your bank, paste the email above into the Interac e‑Transfer recipient field. Some bank links may open their website first and then hand off to the app if installed.</p>
-    </div>
-
-    <footer>
-      © Toronto Durgabari
-    </footer>
-  </div>
-
-  <script>
-    const btn = document.getElementById('copyBtn');
-    btn.addEventListener('click', async () => {
-      const email = document.getElementById('email').textContent.trim();
-      try {
-        await navigator.clipboard.writeText(email);
-        btn.textContent = 'Copied!';
-        setTimeout(()=> btn.textContent = 'Copy email', 1500);
-      } catch (e) {
-        btn.textContent = 'Press Ctrl/Cmd+C';
-        const range = document.createRange();
-        range.selectNode(document.getElementById('email'));
-        const sel = window.getSelection();
-        sel.removeAllRanges();
-        sel.addRange(range);
-      }
-    });
-  </script>
+  <p><i>Copy the email above and paste it into your e-Transfer recipient field.</i></p>
 </body>
 </html>
